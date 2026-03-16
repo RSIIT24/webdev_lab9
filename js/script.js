@@ -1,14 +1,16 @@
 document.addEventListener("DOMContentLoaded", function () {
 
   const button = document.getElementById("entrybutton");
+  const input = document.getElementById("entryinput");
+  const output = document.getElementById("textoutput");
 
   button.addEventListener("click", function () {
 
-    const inputValue = document.getElementById("entryinput").value;
+    const message = input.value;
 
-    alert("Rikki Sims: " + inputValue);
+    alert("Rikki Sims: " + message);
 
-    document.getElementById("textoutput").textContent = inputValue;
+    output.textContent = message;
 
   });
 
